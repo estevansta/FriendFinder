@@ -1,3 +1,5 @@
+// dummy data provided by the homework instructions
+
 var friends = [
      {
     "name":"Ahmed",
@@ -17,4 +19,6 @@ var friends = [
   }
 ];
 
+
+//export the array so its accessible to other files
 module.exports = friends;
