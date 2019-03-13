@@ -14,6 +14,7 @@ app.use(express.json());
 // route files that express allows us to access with (app) and ./
 require("./routing/apiRoutes")(app);
 require("./routing/htmlRoutes")(app);
+console.log(require)
 
 // lisen to showcase that we're actually using the server on the PORT above
 app.listen(PORT, function() {
