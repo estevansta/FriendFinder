@@ -11,20 +11,11 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// ================================================================================
-// ROUTER
-// The below points our server to a series of "route" files.
-// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-// ================================================================================
-
+// route files that express allows us to access with (app) and ./
 require("./routing/apiRoutes")(app);
 require("./routing/htmlRoutes")(app);
 
-// =============================================================================
-// LISTENER
-// The below code effectively "starts" our server
-// =============================================================================
-
+// lisen to showcase that we're actually using the server on the PORT above
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
