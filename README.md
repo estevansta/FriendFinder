@@ -15,7 +15,6 @@
 * Javascript
 * Node.js
 * MySQL
-* NPM mysql
 * NPM Express
-* NPM Express-Handlebars
+* NPM path
 * Deployed via Heroku
